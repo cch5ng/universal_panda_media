@@ -1,0 +1,64 @@
+{
+  "stories": [
+    { "id": 1, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "politics",
+    	"type": "top story"
+    },
+    { "id": 2, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "arts",
+    	"type": "secondary story"
+    },
+    { "id": 3, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "national",
+    	"type": "secondary story"
+    },
+    { "id": 4, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "international",
+    	"type": "secondary story"
+    },
+    { "id": 5, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "music",
+    	"type": "story"
+    },
+    { "id": 6, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "national",
+    	"type": "story"
+    },
+    { "id": 7, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "international",
+    	"type": "story"
+    },
+    { "id": 8, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "music",
+    	"type": "story"
+    },
+    { "id": 9, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "international",
+    	"type": "story"
+    },
+    { "id": 10, 
+    	"title": "json-server", 
+    	"author": "typicode",
+    	"category": "music",
+    	"type": "story"
+    }
+  ]
+}

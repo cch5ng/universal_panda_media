@@ -27,7 +27,7 @@ const requests = {
 
 const Stories = {
   getAll: () => {
-    return requests.get(`${API_ROOT}${STORIES_ALL}`)
+    return requests.get(`${JSON_SERVER_API_ROOT}${STORIES_ALL}`)
   },
 }
 

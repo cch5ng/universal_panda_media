@@ -15,13 +15,32 @@ class Stories extends Component {
 
 	componentDidMount() {
 		this.props.dispatch(fetchStories());
-		this.props.dispatch(fetchImages());
 	}
 
 	render() {
+		let primaryStory = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'top story')[0]: null;
+		let secondaryStoriesAr = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'secondary story') : [];
+		let genStoriesAr = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'story') : [];
+
+		//console.log('primaryStory len', primaryStory.length)
+		console.log('secondaryStoriesAr len', secondaryStoriesAr.length)
+		console.log('genStoriesAr len', genStoriesAr.length)
+
 		return (
 			<div>
 				<h1>Stories</h1>
+
+				{primaryStory && (
+					<PrimaryStory story={primaryStory} />
+				)}
+
+				{secondaryStoriesAr.map(secondaryStory => 
+					(<SecondaryStory story={secondaryStory} />)
+				)}
+
+				{genStoriesAr.map(genStory =>
+					(<Story story={genStory} />)
+				)}
 			</div>
 		)
 	}
@@ -32,5 +51,55 @@ function mapStateToProps(state) {
 		stories: state.stories,
 	}
 }
+
+function PrimaryStory(props) {
+	console.log('primary props', props)
+	return (
+		<div>
+			<div>
+				<p>{props.story.category}</p>
+				<p>{props.story.title}</p>
+				<p>{props.story.textShort}</p>
+			</div>
+			<div>
+				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+			</div>
+		</div>
+	)
+}
+
+function SecondaryStory(props) {
+	console.log('secondary props', props)
+
+	return (
+		<div>
+			<div>
+				<p>{props.story.category}</p>
+				<p>{props.story.title}</p>
+			</div>
+			<div>
+				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+			</div>
+		</div>
+	)
+}
+
+function Story(props) {
+	console.log('props', props)
+
+	return (
+		<div>
+			<div>
+				<p>{props.story.category}</p>
+				<p>{props.story.title}</p>
+				<p>{props.story.textShort}</p>
+			</div>
+			<div>
+				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+			</div>
+		</div>
+	)
+}
+
 
 export default connect(mapStateToProps)(Stories);

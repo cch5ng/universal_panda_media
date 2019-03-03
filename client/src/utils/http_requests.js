@@ -1,4 +1,4 @@
-const API_ROOT = process.env.API_ROOT;
+const JSON_SERVER_API_ROOT = process.env.JSON_SERVER_API_ROOT;
 const STORIES_ALL = 'stories';
 
 const UNSPLASH_API_ROOT = 'https://api.unsplash.com/';

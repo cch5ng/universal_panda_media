@@ -22,10 +22,6 @@ class Stories extends Component {
 		let secondaryStoriesAr = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'secondary story') : [];
 		let genStoriesAr = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'story') : [];
 
-		//console.log('primaryStory len', primaryStory.length)
-		console.log('secondaryStoriesAr len', secondaryStoriesAr.length)
-		console.log('genStoriesAr len', genStoriesAr.length)
-
 		return (
 			<div>
 				<h1>Stories</h1>
@@ -53,7 +49,6 @@ function mapStateToProps(state) {
 }
 
 function PrimaryStory(props) {
-	console.log('primary props', props)
 	return (
 		<div>
 			<div>
@@ -69,8 +64,6 @@ function PrimaryStory(props) {
 }
 
 function SecondaryStory(props) {
-	console.log('secondary props', props)
-
 	return (
 		<div>
 			<div>
@@ -85,8 +78,6 @@ function SecondaryStory(props) {
 }
 
 function Story(props) {
-	console.log('props', props)
-
 	return (
 		<div>
 			<div>
@@ -100,6 +91,5 @@ function Story(props) {
 		</div>
 	)
 }
-
 
 export default connect(mapStateToProps)(Stories);

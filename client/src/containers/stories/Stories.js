@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
-import { fetchStories } from './StoryActions';
+import { fetchStories, fetchImages } from './StoryActions';
 //import globalStyles from '../App.css';
 
 class Stories extends Component {
@@ -14,6 +14,8 @@ class Stories extends Component {
 	}
 
 	componentDidMount() {
+		this.props.dispatch(fetchStories());
+		this.props.dispatch(fetchImages());
 	}
 
 	render() {

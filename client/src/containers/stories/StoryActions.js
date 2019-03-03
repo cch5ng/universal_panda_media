@@ -25,18 +25,48 @@ export function receiveStories(response) {
 export const fetchStories = () => dispatch => {
 	dispatch(requestStories());
 
-	http_requests.Stories.getAll()
-		.then(json => dispatch(receiveStories(json)))
+	Promise.all([http_requests.Stories.getAll(), http_requests.Images.getAllImages()])
+		.then(values => {
+			let [storiesResp, imagesResp] = values;
+			let storiesCount = storiesResp.length;
+			let imagesAr = imagesResp.results;
+
+			for (let i = 0; i < storiesResp.length; i++) {
+				storiesResp[i].image = imagesAr[i];
+			}
+			console.log('storiesResp', storiesResp)
+			dispatch(receiveStories(storiesResp))
+		})
 		.catch(err => console.error('error', err))
 }
 
 // sync image actions
-export const REQUEST_IMAGES = 'REQUEST_IMAGES';
-export const RECEIVE_IMAGES = 'RECEIVE_IMAGES';
+// export const REQUEST_IMAGES = 'REQUEST_IMAGES';
+// export const RECEIVE_IMAGES = 'RECEIVE_IMAGES';
+
+// export function requestImages() {
+// 	return {
+// 		type: REQUEST_IMAGES,
+// 		retrieving: true,
+// 		imagesErr: null
+// 	}
+// }
+
+// export function receiveImages(images) {
+// 	return {
+// 		type: RECEIVE_IMAGES,
+// 		retrieving: false,
+// 		images
+// 	}
+// }
 
 // async fetch images
-export const fetchImages = () => dispatch => {
-	http_requests.Images.getAllImages()
-		.then(json => console.log('images', json))
-		.catch(err => console.error('error', err))
-}
+// export const fetchImages = () => dispatch => {
+// 	http_requests.Images.getAllImages()
+// 		.then(json => {
+// 			console.log('images', json)
+// 			//return json	
+// 			dispatch(receiveImages(json.results))
+// 		})
+// 		.catch(err => console.error('error', err))
+// }

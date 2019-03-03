@@ -19,5 +19,4 @@ export function stories(state = {}, action) {
 		default:
 			return state
 	}
-
 };

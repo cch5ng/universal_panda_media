@@ -1,64 +1,144 @@
 {
   "stories": [
     { "id": 1, 
-    	"title": "json-server", 
+    	"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit", 
     	"author": "typicode",
-    	"category": "politics",
-    	"type": "top story"
+    	"category": "NATIONAL SECURITY",
+    	"type": "top story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 2, 
-    	"title": "json-server", 
+    	"title": "Sed molestie, neque sit amet dignissim sollicitudin", 
     	"author": "typicode",
-    	"category": "arts",
-    	"type": "secondary story"
+    	"category": "BUSINESS",
+    	"type": "secondary story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 3, 
-    	"title": "json-server", 
+    	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
     	"author": "typicode",
-    	"category": "national",
-    	"type": "secondary story"
+    	"category": "POLITICS",
+    	"type": "secondary story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 4, 
-    	"title": "json-server", 
+    	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
     	"author": "typicode",
-    	"category": "international",
-    	"type": "secondary story"
+    	"category": "SHOTS - HEALTH NEWS",
+    	"type": "secondary story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 5, 
-    	"title": "json-server", 
+    	"title": "Integer tristique dolor eu ornare auctor", 
     	"author": "typicode",
-    	"category": "music",
-    	"type": "story"
+    	"category": "POLITICS",
+    	"type": "story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 6, 
-    	"title": "json-server", 
+    	"title": "Vivamus eu ligula in nibh gravida semper", 
     	"author": "typicode",
-    	"category": "national",
-    	"type": "story"
+    	"category": "TECHNOLOGY",
+    	"type": "story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 7, 
-    	"title": "json-server", 
+    	"title": "Morbi at nulla mattis nunc fringilla finibus", 
     	"author": "typicode",
-    	"category": "international",
-    	"type": "story"
+    	"category": "POLITICS",
+    	"type": "story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 8, 
-    	"title": "json-server", 
+    	"title": "Morbi at nulla mattis nunc fringilla finibus", 
     	"author": "typicode",
-    	"category": "music",
-    	"type": "story"
+    	"category": "POLITICS",
+    	"type": "story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 9, 
-    	"title": "json-server", 
+    	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
     	"author": "typicode",
-    	"category": "international",
-    	"type": "story"
+    	"category": "NATIONAL",
+    	"type": "story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     },
     { "id": 10, 
-    	"title": "json-server", 
+    	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
     	"author": "typicode",
-    	"category": "music",
-    	"type": "story"
+    	"category": "MEDIA",
+    	"type": "story",
+    	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
+    	"textLong": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie, neque sit amet dignissim sollicitudin, enim ex malesuada elit, at gravida elit ligula eu nibh. Pellentesque velit leo, pellentesque non leo nec, faucibus molestie enim. Nulla bibendum sem sit amet justo fermentum dictum. Nulla quis nulla quis ligula pharetra vulputate. Aliquam sed commodo lectus, id aliquam nunc. In est turpis, euismod ac est non, interdum pharetra mauris. Sed gravida pharetra odio varius dapibus. Nullam aliquet dapibus ipsum in mattis. In sit amet lorem vel ligula accumsan blandit. Mauris vitae bibendum ante, sed aliquam velit. Nunc vulputate elit quis auctor scelerisque. Cras lobortis erat vel porttitor eleifend.\nVestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ante neque, venenatis a pellentesque vitae, viverra non erat. Aliquam erat volutpat. Fusce dapibus fermentum turpis vestibulum condimentum. Maecenas non porta leo. Nunc gravida justo eu lacus vestibulum semper. Donec sed velit suscipit, feugiat libero sit amet, commodo purus. Curabitur cursus orci vitae odio mattis vehicula sit amet at metus. Vivamus ut lacinia neque. Sed consequat velit arcu. Cras quis est nibh. Praesent non tempus augue. Sed vel mauris feugiat, rhoncus nisl eu, bibendum elit. Proin dictum odio a purus feugiat, non egestas mi convallis.\nVestibulum a magna porta, pulvinar felis non, pretium lacus. Nulla facilisis consectetur odio, eget fermentum libero tincidunt vitae. Duis feugiat, ex in ornare congue, ex ex dignissim dui, tincidunt aliquam eros velit a mi. Quisque nibh quam, iaculis vel velit ut, ultrices condimentum nunc. Curabitur interdum leo nec posuere commodo. Donec ultrices porta nisl, sed pellentesque felis porta quis. Suspendisse vitae rutrum mi, eget tincidunt massa. Praesent felis purus, efficitur sed augue a, auctor mattis nunc. Mauris fringilla aliquam lacus sit amet pharetra. Vestibulum suscipit a odio nec eleifend. Proin tincidunt feugiat quam, et dictum turpis. Vestibulum nec bibendum leo, id malesuada diam. Nulla vehicula gravida tristique. Nulla laoreet turpis quis luctus vulputate. Ut convallis laoreet lorem, nec vehicula lorem mollis sed.\nIn nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. Morbi tempor nisl a auctor mattis. Donec suscipit nisl vitae leo maximus mollis. Mauris vel erat erat. Aenean eget magna eu libero eleifend congue. Sed auctor lacinia nulla at aliquet. Morbi hendrerit dapibus metus a tempor. In bibendum commodo laoreet. Fusce vulputate dui id metus finibus semper. Vivamus ut orci et odio maximus venenatis.",
+    	"image": {
+    		"url": "",
+    		"credit": "John Do",
+    		"caption": ""
+    	},
+    	"date": ""
     }
   ]
 }

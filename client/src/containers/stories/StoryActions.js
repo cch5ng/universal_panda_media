@@ -39,34 +39,3 @@ export const fetchStories = () => dispatch => {
 		})
 		.catch(err => console.error('error', err))
 }
-
-// sync image actions
-// export const REQUEST_IMAGES = 'REQUEST_IMAGES';
-// export const RECEIVE_IMAGES = 'RECEIVE_IMAGES';
-
-// export function requestImages() {
-// 	return {
-// 		type: REQUEST_IMAGES,
-// 		retrieving: true,
-// 		imagesErr: null
-// 	}
-// }
-
-// export function receiveImages(images) {
-// 	return {
-// 		type: RECEIVE_IMAGES,
-// 		retrieving: false,
-// 		images
-// 	}
-// }
-
-// async fetch images
-// export const fetchImages = () => dispatch => {
-// 	http_requests.Images.getAllImages()
-// 		.then(json => {
-// 			console.log('images', json)
-// 			//return json	
-// 			dispatch(receiveImages(json.results))
-// 		})
-// 		.catch(err => console.error('error', err))
-// }

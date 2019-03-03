@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
 import { fetchStories, fetchImages } from './StoryActions';
-//import globalStyles from '../App.css';
+import globalStyles from '../App.css';
+import storyStyles from './Stories.css';
+
+
 
 class Stories extends Component {
 

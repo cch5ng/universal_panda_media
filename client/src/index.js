@@ -6,7 +6,6 @@ import thunk from 'redux-thunk';
 import App from './containers/App';
 import appStore from './store/index.js';
 
-const title = 'My Minimal <3 <3 <3 hello React Webpack Babel Setup';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const store = createStore(appStore,

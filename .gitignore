@@ -1,4 +1,7 @@
 .DS_Store
+.env
 /node_modules
 /server/node_modules
+/server/.env
 /client/node_modules
+/cleint/.env

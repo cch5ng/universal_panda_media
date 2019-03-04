@@ -28,23 +28,30 @@ class Stories extends Component {
 		let genStoriesAr = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'story') : [];
 
 		return (
-			<div>
-				{primaryStory && (
-					<PrimaryStory story={primaryStory} />
-				)}
+			<div className={styles.pageContainer}>
+				<div className={styles.storiesContainer}>
+					{primaryStory && (
+						<PrimaryStory story={primaryStory} />
+					)}
 
 
-				{secondaryStoriesAr.length > 0 && (
-					<div className={styles.secondaryStoriesContainer}>
-						{secondaryStoriesAr.map(secondaryStory => 
-							(<SecondaryStory story={secondaryStory} />)
-						)}
+					{secondaryStoriesAr.length > 0 && (
+						<div className={styles.secondaryStoriesContainer}>
+							{secondaryStoriesAr.map(secondaryStory => 
+								(<SecondaryStory story={secondaryStory} />)
+							)}
+						</div>
+					)}
+
+					{genStoriesAr.map(genStory =>
+						(<Story story={genStory} />)
+					)}
+				</div>
+				<div className={styles.adContainer}>
+					<div className={styles.adContent}>
+						<p>Ad Placeholder</p>
 					</div>
-				)}
-
-				{genStoriesAr.map(genStory =>
-					(<Story story={genStory} />)
-				)}
+				</div>
 			</div>
 		)
 	}

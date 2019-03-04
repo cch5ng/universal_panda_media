@@ -61,6 +61,7 @@ function PrimaryStory(props) {
 			</div>
 			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
 		</div>
 	)
@@ -80,6 +81,7 @@ function SecondaryStory(props) {
 			</div>
 			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
 		</div>
 	)
@@ -95,6 +97,7 @@ function Story(props) {
 			</div>
 			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
 		</div>
 	)

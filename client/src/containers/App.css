@@ -57,6 +57,13 @@ img {
 	max-height: 150px;
 }
 
+.imageCredit {
+	float: right;
+	color: #7f7f7f;
+	font-size: 0.85em;
+	margin-top: -5px;
+}
+
 @media (min-width: 900px) {
 	.title {
 		font-size: 1.8em;

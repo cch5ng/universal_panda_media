@@ -27,12 +27,12 @@ main {
 }
 
 .secondaryStory {
-	height: 165px;
+	height: 150px;
 }
 
 .textContent {
 	float: left;
-	width: calc(60% - 36px/2 - 32px/2);
+	width: calc(50% - 36px/2 - 32px/2);
 }
 
 .category {
@@ -49,11 +49,12 @@ main {
 
 .storyImage {
 	float: right;
-	width: calc(40% - 36px/2 ); /*- 32px/2*/
+	width: calc(50% - 36px/2); /*- 32px/2*/
 }
 
 img {
 	max-width: 100%;
+	max-height: 150px;
 }
 
 @media (min-width: 900px) {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
+import classNames from 'classnames';
 import { fetchStories, fetchImages } from './StoryActions';
 import globalStyles from '../App.css';
 import storyStyles from './Stories.css';
@@ -66,8 +67,13 @@ function PrimaryStory(props) {
 }
 
 function SecondaryStory(props) {
+	let secondStoryContainerClass = classNames({
+		[styles.story]: true,
+		[styles.secondaryStory]: true
+	});
+
 	return (
-		<div className={styles.story}>
+		<div className={secondStoryContainerClass}>
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
 				<p className={styles.title}>{props.story.title}</p>

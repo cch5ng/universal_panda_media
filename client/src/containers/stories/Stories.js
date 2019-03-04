@@ -28,18 +28,30 @@ class Stories extends Component {
 		let genStoriesAr = this.props.stories && this.props.stories.stories ? this.props.stories.stories.filter(story => story.type === 'story') : [];
 
 		return (
-			<div>
-				{primaryStory && (
-					<PrimaryStory story={primaryStory} />
-				)}
+			<div className={styles.pageContainer}>
+				<div className={styles.storiesContainer}>
+					{primaryStory && (
+						<PrimaryStory story={primaryStory} />
+					)}
 
-				{secondaryStoriesAr.map(secondaryStory => 
-					(<SecondaryStory story={secondaryStory} />)
-				)}
 
-				{genStoriesAr.map(genStory =>
-					(<Story story={genStory} />)
-				)}
+					{secondaryStoriesAr.length > 0 && (
+						<div className={styles.secondaryStoriesContainer}>
+							{secondaryStoriesAr.map(secondaryStory => 
+								(<SecondaryStory story={secondaryStory} />)
+							)}
+						</div>
+					)}
+
+					{genStoriesAr.map(genStory =>
+						(<Story story={genStory} />)
+					)}
+				</div>
+				<div className={styles.adContainer}>
+					<div className={styles.adContent}>
+						<p>Ad Placeholder</p>
+					</div>
+				</div>
 			</div>
 		)
 	}
@@ -61,6 +73,7 @@ function PrimaryStory(props) {
 			</div>
 			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
 		</div>
 	)
@@ -80,6 +93,7 @@ function SecondaryStory(props) {
 			</div>
 			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
 		</div>
 	)
@@ -95,6 +109,7 @@ function Story(props) {
 			</div>
 			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
 		</div>
 	)

@@ -33,8 +33,13 @@ class Stories extends Component {
 					<PrimaryStory story={primaryStory} />
 				)}
 
-				{secondaryStoriesAr.map(secondaryStory => 
-					(<SecondaryStory story={secondaryStory} />)
+
+				{secondaryStoriesAr.length > 0 && (
+					<div className={styles.secondaryStoriesContainer}>
+						{secondaryStoriesAr.map(secondaryStory => 
+							(<SecondaryStory story={secondaryStory} />)
+						)}
+					</div>
 				)}
 
 				{genStoriesAr.map(genStory =>

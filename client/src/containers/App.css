@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Vollkorn', serif;
+	box-sizing: border-box;
 }
 
 nav {
@@ -13,8 +14,16 @@ main {
 	margin: 16px 0;
 }
 
+footer {
+	height: 350px;
+	background-color: #cccccc;
+}
+
 /* Stories */
 .story {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 	margin: 0 16px 16px 16px;
 	border: 1px solid #cccccc;
 	box-shadow: 2px 2px 2px 2px #e5e5e5;
@@ -22,17 +31,17 @@ main {
 	height: 180px;
 }
 
-.story:after {
+/*.story:after {
 	clear: both;
-}
+}*/
 
 .secondaryStory {
 	height: 150px;
 }
 
 .textContent {
-	float: left;
-	width: calc(50% - 36px/2 - 32px/2);
+	/*float: left;*/
+	width: calc(50%);
 }
 
 .category {
@@ -48,8 +57,10 @@ main {
 }
 
 .storyImage {
-	float: right;
-	width: calc(50% - 36px/2); /*- 32px/2*/
+	/*float: right;*/
+	width: calc(50%); /*- 32px/2 - 32px/2*/
+	display: flex;
+	flex-flow: column wrap;
 }
 
 img {
@@ -60,8 +71,46 @@ img {
 .imageCredit {
 	float: right;
 	color: #7f7f7f;
-	font-size: 0.85em;
-	margin-top: -5px;
+	font-size: 0.7em;
+	font-style: italic;
+	align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+
+	.story {
+		height: 270px;
+	}
+
+	image {
+		max-height: 250px;
+	}
+
+	.secondaryStoriesContainer {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	.secondaryStory {
+		width: 29%;
+		height: 350px;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+	}
+
+	.secondaryStory .textContent {
+		/*float: left;*/
+		width: 100%;
+		order: 2;
+	}
+
+	.secondaryStory .storyImage {
+		width: 100%;
+		order: 1;
+	}
+
 }
 
 @media (min-width: 900px) {

@@ -1,0 +1,65 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Vollkorn', serif;
+}
+
+nav {
+	height: 60px;
+	background-color: #323232;
+}
+
+main {
+	margin: 16px 0;
+}
+
+/* Stories */
+.story {
+	margin: 0 16px 16px 16px;
+	border: 1px solid #cccccc;
+	box-shadow: 2px 2px 2px 2px #e5e5e5;
+	padding: 18px;
+	height: 180px;
+}
+
+.story:after {
+	clear: both;
+}
+
+.secondaryStory {
+	height: 150px;
+}
+
+.textContent {
+	float: left;
+	width: calc(50% - 36px/2 - 32px/2);
+}
+
+.category {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 0.9em;
+	color: #4c4c4c;
+}
+
+.title {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.storyImage {
+	float: right;
+	width: calc(50% - 36px/2); /*- 32px/2*/
+}
+
+img {
+	max-width: 100%;
+	max-height: 150px;
+}
+
+@media (min-width: 900px) {
+	.title {
+		font-size: 1.8em;
+	}
+
+}

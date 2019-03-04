@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
+import classNames from 'classnames';
 import { fetchStories, fetchImages } from './StoryActions';
-//import globalStyles from '../App.css';
+import globalStyles from '../App.css';
+import storyStyles from './Stories.css';
+
+let styles = {};
+Object.assign(styles, globalStyles, storyStyles);
 
 class Stories extends Component {
 
@@ -24,8 +29,6 @@ class Stories extends Component {
 
 		return (
 			<div>
-				<h1>Stories</h1>
-
 				{primaryStory && (
 					<PrimaryStory story={primaryStory} />
 				)}
@@ -50,13 +53,13 @@ function mapStateToProps(state) {
 
 function PrimaryStory(props) {
 	return (
-		<div>
-			<div>
-				<p>{props.story.category}</p>
-				<p>{props.story.title}</p>
+		<div className={styles.story}>
+			<div className={styles.textContent}>
+				<p className={styles.category}>{props.story.category}</p>
+				<p className={styles.title}>{props.story.title}</p>
 				<p>{props.story.textShort}</p>
 			</div>
-			<div>
+			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
 			</div>
 		</div>
@@ -64,13 +67,18 @@ function PrimaryStory(props) {
 }
 
 function SecondaryStory(props) {
+	let secondStoryContainerClass = classNames({
+		[styles.story]: true,
+		[styles.secondaryStory]: true
+	});
+
 	return (
-		<div>
-			<div>
-				<p>{props.story.category}</p>
-				<p>{props.story.title}</p>
+		<div className={secondStoryContainerClass}>
+			<div className={styles.textContent}>
+				<p className={styles.category}>{props.story.category}</p>
+				<p className={styles.title}>{props.story.title}</p>
 			</div>
-			<div>
+			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
 			</div>
 		</div>
@@ -79,13 +87,13 @@ function SecondaryStory(props) {
 
 function Story(props) {
 	return (
-		<div>
-			<div>
-				<p>{props.story.category}</p>
-				<p>{props.story.title}</p>
+		<div className={styles.story}>
+			<div className={styles.textContent}>
+				<p className={styles.category}>{props.story.category}</p>
+				<p className={styles.title}>{props.story.title}</p>
 				<p>{props.story.textShort}</p>
 			</div>
-			<div>
+			<div className={styles.storyImage}>
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
 			</div>
 		</div>

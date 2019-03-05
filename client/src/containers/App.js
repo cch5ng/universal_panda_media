@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-do
 import { connect } from 'react-redux';
 import Stories from '../containers/stories/Stories';
 import { fetchStories } from '../containers/stories/StoryActions';
-//import styles from './App.css';
+import styles from './App.css';
 
 class App extends Component {
 
@@ -23,7 +23,15 @@ class App extends Component {
   		<Router>
   			<div className="App">
   				<header>
-  					<nav></nav>
+  					<nav>
+              <div className={styles.navLeft}>
+                <p className={styles.logo}>LCR</p>
+                <p className={styles.navIcon}>LS</p>
+              </div>
+              <div className={styles.navRight}>
+                <div className={styles.navButton}>&#9776;</div>
+              </div>
+            </nav>
   				</header>
   				<main>
   					<Switch>

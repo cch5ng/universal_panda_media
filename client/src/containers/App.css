@@ -5,9 +5,51 @@
 	box-sizing: border-box;
 }
 
+/* Header */
 nav {
 	height: 60px;
-	background-color: #323232;
+	padding: 0 16px;
+	border-bottom: 1px solid #cccccc;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.navLeft {
+	width: 50%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.logo {
+	font-family: 'Laila', serif;
+	margin-top: 8px;
+	font-size: 26px;
+}
+
+.navIcon {
+	width: 28px;
+	height: 28px;
+	margin-left: 8px;
+	margin-top: 14px;
+	padding-top: 3px;
+	padding-left: 4px;
+	font-size: 18px;
+	background-color: #000000;
+	border-radius: 14px;
+	color: #ffffff;
+}
+
+.navButton {
+	margin-top: 16px;
+	width: 26px;
+	height: 26px;
+	padding-left: 5px;
+	padding-top: -5px;
+	background-color: #e5e5e5;
+	border-radius: 3px;
+	border: 1px solid #cccccc;
+	align-self: flex-end;
 }
 
 main {

@@ -76,6 +76,19 @@ img {
 	align-self: flex-end;
 }
 
+.btnMedium {
+	background-color: #beffa4;
+	width: 150px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.btnMediumIcon {
+	padding-right: 15px;
+}
+
 /* Ads */
 .adContainer {
 	display: none;

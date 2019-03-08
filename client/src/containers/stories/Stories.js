@@ -111,6 +111,7 @@ function Story(props) {
 				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
 				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
 			</div>
+			<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
 		</div>
 	)
 }

@@ -4,6 +4,9 @@ const STORIES_ALL = 'stories';
 const UNSPLASH_API_ROOT = 'https://api.unsplash.com/';
 const IMAGES_NATURE = 'search/photos?query=nature&per_page=30';
 
+const YOUTUBE_API_ROOT = 'https://content.googleapis.com/youtube/v3/'
+const YOUTUBE_VIDEOS_REQUEST = `search?part=snippet&maxResults=25&q=doxiemom19%20panda&key=${process.env.YOUTUBE_CLIENT_KEY}`
+
 const requests = {
   get: url => {
     return new Promise((resolve, reject) => {
@@ -37,7 +40,15 @@ const Images = {
   },
 }
 
+const Videos = {
+  getAll: () => {
+    return requests.get(`${YOUTUBE_API_ROOT}${YOUTUBE_VIDEOS_REQUEST}`)
+  },
+}
+
+
 export default {
   Stories,
   Images,
+  Videos,
 }

@@ -76,13 +76,30 @@ img {
 	align-self: flex-end;
 }
 
-.btnMedium {
-	background-color: #beffa4;
-	width: 150px;
+.btnSmall {
+	background-color: #ffffff;
+	width: 100px;
 	height: 30px;
-	padding: 5px;
-	border-radius: 12px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+	border-radius: 16px;
 	text-align: center;
+	margin-top: 16px;
+}
+
+.btnSmallIcon {
+	padding-right: 10px;
+}
+
+.btnMedium {
+	background-color: #77c8c0;
+	/*#beffa4;*/
+	width: 130px;
+	height: 30px;
+	padding: 6px;
+	border-radius: 16px;
+	text-align: center;
+	margin-top: 16px;
 }
 
 .btnMediumIcon {

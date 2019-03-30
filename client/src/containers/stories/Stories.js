@@ -126,6 +126,8 @@ function Story(props) {
 				<p className={styles.category}>{props.story.category}</p>
 				<p className={styles.title}>{props.story.title}</p>
 				<p>{props.story.textShort}</p>
+				<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
+				<div className={styles.btnSmall}><span className={styles.btnSmallIcon}>&#43;</span> Queue</div>
 			</div>
 			<div className={styles.storyImage}>
 				<NavLink to={link}>
@@ -133,7 +135,6 @@ function Story(props) {
 						src={props.story.video.snippet.thumbnails.high.url} alt={props.story.video.snippet.thumbnails.title} />
 				</NavLink>
 			</div>
-			<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
 		</div>
 	)
 }

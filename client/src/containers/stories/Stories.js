@@ -73,7 +73,7 @@ function mapStateToProps(state) {
 
 function PrimaryStory(props) {
 	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
-	let link = props.story.video.id.videoId ? `/story/${props.story.video.id.videoId}` : '/';
+	let link = `/story/${props.story.id}`;
 
 	return (
 		<div className={styles.story} idx="0">
@@ -98,7 +98,7 @@ function SecondaryStory(props) {
 		[styles.secondaryStory]: true
 	});
 	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
-	let link = props.story.video.id.videoId ? `/story/${props.story.video.id.videoId}` : '/';
+	let link = `/story/${props.story.id}`;
 
 	return (
 		<div className={secondStoryContainerClass}>
@@ -118,7 +118,7 @@ function SecondaryStory(props) {
 
 function Story(props) {
 	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
-	let link = props.story.video.id.videoId ? `/story/${props.story.video.id.videoId}` : '/';
+	let link = `/story/${props.story.id}`;
 
 	return (
 		<div className={styles.story}>

@@ -24,20 +24,42 @@ export function receiveStories(response) {
 // async fetch stories
 export const fetchStories = () => dispatch => {
 	dispatch(requestStories());
+	dispatch(requestVideos());
 
-	Promise.all([http_requests.Stories.getAll(), http_requests.Videos.getAll()]) //http_requests.Images.getAllImages()
+	Promise.all([http_requests.Stories.getAll(), http_requests.Videos.getAll()])
 		.then(values => {
-			let [storiesResp, videosResp] = values; //imagesResp
+			let [storiesResp, videosResp] = values;
 			let storiesCount = storiesResp.length;
 			let videosAr = videosResp.items;
-			//let imagesAr = imagesResp.results;
+			videosAr = videosAr.filter(video => video.id.kind === 'youtube#video');
 
 			for (let i = 0; i < storiesResp.length; i++) {
 				storiesResp[i].video = videosAr[i];
-				//storiesResp[i].image = imagesAr[i];
 			}
-			console.log('storiesResp', storiesResp)
+
 			dispatch(receiveStories(storiesResp))
+			dispatch(receiveVideos(videosAr))
 		})
 		.catch(err => console.error('error', err))
+}
+
+// sync story actions
+export const REQUEST_VIDEOS = 'REQUEST_VIDEOS';
+export const RECEIVE_VIDEOS = 'RECEIVE_VIDEOS';
+
+export function requestVideos() {
+	return {
+		type: REQUEST_VIDEOS,
+		retrieving: true,
+		videosErr: null,
+	}
+}
+
+export function receiveVideos(response) {
+	return {
+		type: RECEIVE_VIDEOS,
+		retrieving: false,
+		videos: response,
+		videosErr: response.error || null
+	}	
 }

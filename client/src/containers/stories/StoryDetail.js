@@ -53,7 +53,6 @@ class StoryDetail extends Component {
 				<div className={styles.textContent}>
 					<p className={styles.category}>{curStory.category}</p>
 					<p className={styles.titleDetail}>{curStory.title}</p>
-					<p>{curStory.textShort}</p>
 				</div>
 				<div className={styles.storyMetaContainer}>
 					<div>date time</div>

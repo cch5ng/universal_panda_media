@@ -37,14 +37,14 @@ class Stories extends Component {
 
 					{secondaryStoriesAr.length > 0 && (
 						<div className={styles.secondaryStoriesContainer}>
-							{secondaryStoriesAr.map(secondaryStory => 
-								(<SecondaryStory story={secondaryStory} />)
+							{secondaryStoriesAr.map((secondaryStory, idx) => 
+								(<SecondaryStory story={secondaryStory} idx={idx} />)
 							)}
 						</div>
 					)}
 
-					{genStoriesAr.map(genStory =>
-						(<Story story={genStory} />)
+					{genStoriesAr.map((genStory, idx) =>
+						(<Story story={genStory} idx={idx} />)
 					)}
 				</div>
 				<div className={styles.adContainer}>
@@ -76,7 +76,7 @@ function PrimaryStory(props) {
 	let link = props.story.video.id.videoId ? `/story/${props.story.video.id.videoId}` : '/';
 
 	return (
-		<div className={styles.story}>
+		<div className={styles.story} idx="0">
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
 				<p className={styles.title}>{props.story.title}</p>
@@ -126,8 +126,11 @@ function Story(props) {
 				<p className={styles.category}>{props.story.category}</p>
 				<p className={styles.title}>{props.story.title}</p>
 				<p>{props.story.textShort}</p>
-				<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
-				<div className={styles.btnSmall}><span className={styles.btnSmallIcon}>&#43;</span> Queue</div>
+				<div className={styles.btnContainer}>
+					<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
+					<div className={styles.btnSmall}><span className={styles.btnSmallIcon}>&#43;</span> Queue</div>
+					<div className={styles.btnCircle}><span>&#60;&#62;</span></div>
+				</div>
 			</div>
 			<div className={styles.storyImage}>
 				<NavLink to={link}>

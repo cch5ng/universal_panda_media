@@ -28,7 +28,7 @@ footer {
 	border: 1px solid #cccccc;
 	box-shadow: 2px 2px 2px 2px #e5e5e5;
 	padding: 18px;
-	height: 180px;
+	/*height: 180px;*/
 }
 
 /*.story:after {
@@ -41,7 +41,7 @@ footer {
 
 .textContent {
 	/*float: left;*/
-	width: calc(50%);
+	width: 60%;
 }
 
 .category {
@@ -58,7 +58,7 @@ footer {
 
 .storyImage {
 	/*float: right;*/
-	width: calc(50%); /*- 32px/2 - 32px/2*/
+	width: 40%; /*- 32px/2 - 32px/2*/
 	display: flex;
 	flex-flow: column wrap;
 }
@@ -76,19 +76,9 @@ img {
 	align-self: flex-end;
 }
 
-.btnSmall {
-	background-color: #ffffff;
-	width: 100px;
-	height: 30px;
-	padding: 4px;
-	border: 1px solid #cccccc;
-	border-radius: 16px;
-	text-align: center;
-	margin-top: 16px;
-}
-
-.btnSmallIcon {
-	padding-right: 10px;
+.btnContainer {
+	display: flex;
+	justify-content: flex-start;
 }
 
 .btnMedium {
@@ -100,10 +90,38 @@ img {
 	border-radius: 16px;
 	text-align: center;
 	margin-top: 16px;
+	margin-right: 8px;
 }
 
 .btnMediumIcon {
 	padding-right: 15px;
+}
+
+.btnSmall {
+	background-color: #ffffff;
+	width: 100px;
+	height: 30px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+	border-radius: 16px;
+	text-align: center;
+	margin-top: 16px;
+	margin-right: 8px;
+}
+
+.btnCircle {
+	background-color: #ffffff;
+	width: 30px;
+	height: 30px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+	border-radius: 16px;
+	text-align: center;
+	margin-top: 16px;
+}
+
+.btnSmallIcon {
+	padding-right: 10px;
 }
 
 /* Ads */

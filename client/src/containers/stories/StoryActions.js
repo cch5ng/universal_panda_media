@@ -25,16 +25,17 @@ export function receiveStories(response) {
 export const fetchStories = () => dispatch => {
 	dispatch(requestStories());
 
-	Promise.all([http_requests.Stories.getAll(), http_requests.Images.getAllImages()])
+	Promise.all([http_requests.Stories.getAll(), http_requests.Videos.getAll()])
 		.then(values => {
-			let [storiesResp, imagesResp] = values;
+			let [storiesResp, videosResp] = values;
 			let storiesCount = storiesResp.length;
-			let imagesAr = imagesResp.results;
+			let videosAr = videosResp.items;
+			videosAr = videosAr.filter(video => video.id.kind === 'youtube#video');
 
 			for (let i = 0; i < storiesResp.length; i++) {
-				storiesResp[i].image = imagesAr[i];
+				storiesResp[i].video = videosAr[i];
 			}
-			console.log('storiesResp', storiesResp)
+
 			dispatch(receiveStories(storiesResp))
 		})
 		.catch(err => console.error('error', err))

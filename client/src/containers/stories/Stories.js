@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
@@ -37,14 +37,14 @@ class Stories extends Component {
 
 					{secondaryStoriesAr.length > 0 && (
 						<div className={styles.secondaryStoriesContainer}>
-							{secondaryStoriesAr.map(secondaryStory => 
-								(<SecondaryStory story={secondaryStory} />)
+							{secondaryStoriesAr.map((secondaryStory, idx) => 
+								(<SecondaryStory story={secondaryStory} idx={idx} />)
 							)}
 						</div>
 					)}
 
-					{genStoriesAr.map(genStory =>
-						(<Story story={genStory} />)
+					{genStoriesAr.map((genStory, idx) =>
+						(<Story story={genStory} idx={idx} />)
 					)}
 				</div>
 				<div className={styles.adContainer}>
@@ -63,17 +63,30 @@ function mapStateToProps(state) {
 	}
 }
 
+//	<img src={props.story.image.urls.regular} alt={props.story.image.description} />
+/*
+	"elva-fairy-320w.jpg,
+    elva-fairy-480w.jpg 1.5x,
+    elva-fairy-640w.jpg 2x"
+		<p className={styles.imageCredit}>{props.story.image.user.name}</p>
+*/
+
 function PrimaryStory(props) {
+	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
+	let link = `/story/${props.story.id}`;
+
 	return (
-		<div className={styles.story}>
+		<div className={styles.story} idx="0">
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
 				<p className={styles.title}>{props.story.title}</p>
 				<p>{props.story.textShort}</p>
 			</div>
 			<div className={styles.storyImage}>
-				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
-				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
+				<NavLink to={link}>
+					<img srcSet={srcSet}
+						src={props.story.video.snippet.thumbnails.high.url} alt={props.story.video.snippet.thumbnails.title} />
+				</NavLink>
 			</div>
 		</div>
 	)
@@ -84,6 +97,8 @@ function SecondaryStory(props) {
 		[styles.story]: true,
 		[styles.secondaryStory]: true
 	});
+	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
+	let link = `/story/${props.story.id}`;
 
 	return (
 		<div className={secondStoryContainerClass}>
@@ -92,24 +107,36 @@ function SecondaryStory(props) {
 				<p className={styles.title}>{props.story.title}</p>
 			</div>
 			<div className={styles.storyImage}>
-				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
-				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
+				<NavLink to={link}>
+					<img srcSet={srcSet}
+						src={props.story.video.snippet.thumbnails.high.url} alt={props.story.video.snippet.thumbnails.title} />
+				</NavLink>
 			</div>
 		</div>
 	)
 }
 
 function Story(props) {
+	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
+	let link = `/story/${props.story.id}`;
+
 	return (
 		<div className={styles.story}>
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
 				<p className={styles.title}>{props.story.title}</p>
 				<p>{props.story.textShort}</p>
+				<div className={styles.btnContainer}>
+					<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
+					<div className={styles.btnSmall}><span className={styles.btnSmallIcon}>&#43;</span> Queue</div>
+					<div className={styles.btnCircle}><span>&#60;&#62;</span></div>
+				</div>
 			</div>
 			<div className={styles.storyImage}>
-				<img src={props.story.image.urls.regular} alt={props.story.image.description} />
-				<p className={styles.imageCredit}>{props.story.image.user.name}</p>
+				<NavLink to={link}>
+					<img srcSet={srcSet}
+						src={props.story.video.snippet.thumbnails.high.url} alt={props.story.video.snippet.thumbnails.title} />
+				</NavLink>
 			</div>
 		</div>
 	)

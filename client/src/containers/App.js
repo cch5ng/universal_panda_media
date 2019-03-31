@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-do
 import { connect } from 'react-redux';
 import Stories from '../containers/stories/Stories';
 import { fetchStories } from '../containers/stories/StoryActions';
+import StoryDetail from './stories/StoryDetail';
 //import styles from './App.css';
 
 class App extends Component {
@@ -27,9 +28,12 @@ class App extends Component {
   				</header>
   				<main>
   					<Switch>
+              <Route exact path="/story/:id" render={({match}) => (
+                <StoryDetail match={match} />
+                )} />
 							<Route exact path="/" render={() => (
                 <Stories />
-              )} />
+                )}/>
   					</Switch>
   				</main>
   				<footer></footer>

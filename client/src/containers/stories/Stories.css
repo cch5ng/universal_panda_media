@@ -34,11 +34,11 @@
 }
 
 .reporterHeadshot {
-
 	width: 30px;
 	height: 30px;
 	background-color: #3b5998;
 	color: #ffffff;
+	padding: 2px 0 0 7px;
 }
 
 .reporterName {
@@ -69,7 +69,7 @@
 }
 
 .signupContainer {
-	background-color: #eaeaea;
+	background-color: #e5e5e5;
 	padding: 20px;
 	text-align: center;
 }

@@ -64,12 +64,12 @@ class StoryDetail extends Component {
 				<div className={styles.storyMetaContainer}>
 					<div className={styles.storyMetaText}>{prettyDate}</div>
 					<div className={styles.bylineContainer}>
-						<div className={styles.reporterHeadshot}>TD</div>
+						<div className={styles.reporterHeadshot}><i className="fas fa-user-alt"></i></div>
 						<div className={styles.reporterName}>{curStory.author}</div>
 						<div className={styles.socialIconsContainer}>
-							<div className={styles.socialIcon}><i class="fab fa-facebook-square"></i></div>
-							<div className={styles.socialIcon}><i class="fab fa-twitter"></i></div>
-							<div className={styles.socialIcon}><i class="fab fa-instagram"></i></div>
+							<div className={styles.socialIcon}><i className="fab fa-facebook-square"></i></div>
+							<div className={styles.socialIcon}><i className="fab fa-twitter"></i></div>
+							<div className={styles.socialIcon}><i className="fab fa-instagram"></i></div>
 						</div>
 					</div>
 				</div>
@@ -83,10 +83,10 @@ class StoryDetail extends Component {
 				</div>
 
 				<div className={styles.shareSocialIconsContainer}>
-					<div className={styles.shareSocialIcon}><i class="fab fa-facebook-square fa-2x"></i></div>
-					<div className={styles.shareSocialIcon}><i class="fab fa-twitter fa-2x"></i></div>
-					<div className={styles.shareSocialIcon}><i class="fab fa-flipboard fa-2x"></i></div>
-					<div className={styles.shareSocialIcon}><i class="fas fa-envelope fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i className="fab fa-facebook-square fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i className="fab fa-twitter fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i className="fab fa-flipboard fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i className="fas fa-envelope fa-2x"></i></div>
 				</div>
 
 				<div className={styles.signupContainer}>

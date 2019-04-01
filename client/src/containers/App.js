@@ -43,7 +43,7 @@ class App extends Component {
     			<div className="App">
     				<header>
     					<nav>
-                <div className={styles.logo}>UPV</div>
+                <div className={styles.logo}><NavLink className={styles.logoLink} to="/">UPV</NavLink></div>
                 <div className={this.state.displayNavMenu ? styles.hide : styles.navButtonContainer}>
                   <button className={styles.navButton} onClick={this.toggleNavigationMenu}>
                     &#9776;

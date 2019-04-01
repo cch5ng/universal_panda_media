@@ -5,7 +5,7 @@ import Stories from '../containers/stories/Stories';
 import ScrollToTop from './ScrollToTop';
 import { fetchStories } from '../containers/stories/StoryActions';
 import StoryDetail from './stories/StoryDetail';
-//import styles from './App.css';
+import styles from './App.css';
 
 class App extends Component {
 
@@ -26,7 +26,10 @@ class App extends Component {
         <ScrollToTop>
     			<div className="App">
     				<header>
-    					<nav></nav>
+    					<nav>
+                <div className={styles.logo}>UPV</div>
+                <div ><button className={styles.navButton}>&#9776;</button></div>
+              </nav>
     				</header>
     				<main>
     					<Switch>

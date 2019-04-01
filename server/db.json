@@ -2,7 +2,7 @@
   "stories": [
     { "id": 1, 
     	"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit", 
-    	"author": "typicode",
+    	"author": "Edward Storey",
     	"category": "NATIONAL SECURITY",
     	"type": "top story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -12,11 +12,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+    	"createdOnDate": "2012-12-20T03:00:00.000Z"
     },
     { "id": 2, 
     	"title": "Sed molestie, neque sit amet dignissim sollicitudin", 
-    	"author": "typicode",
+    	"author": "Samantha Eye Witness",
     	"category": "BUSINESS",
     	"type": "secondary story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
@@ -26,11 +26,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-11-20T03:00:00.000Z"
     },
     { "id": 3, 
     	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
-    	"author": "typicode",
+    	"author": "Gary Falconer",
     	"category": "POLITICS",
     	"type": "secondary story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
@@ -40,11 +40,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-10-20T03:00:00.000Z"
     },
     { "id": 4, 
     	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
-    	"author": "typicode",
+    	"author": "Harry the Hat",
     	"category": "SHOTS - HEALTH NEWS",
     	"type": "secondary story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor. Vivamus eu ligula in nibh gravida semper. Aliquam scelerisque ligula ut scelerisque finibus. Etiam tristique ultrices neque, ut blandit ipsum rhoncus quis. In at dolor eget quam euismod efficitur. ",
@@ -54,11 +54,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-09-20T03:00:00.000Z"
     },
     { "id": 5, 
     	"title": "Integer tristique dolor eu ornare auctor", 
-    	"author": "typicode",
+    	"author": "Gary Calimari",
     	"category": "POLITICS",
     	"type": "story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -68,11 +68,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-08-20T03:00:00.000Z"
     },
     { "id": 6, 
     	"title": "Vivamus eu ligula in nibh gravida semper", 
-    	"author": "typicode",
+    	"author": "Joe Egg Sandwich",
     	"category": "TECHNOLOGY",
     	"type": "story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -82,11 +82,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-07-20T03:00:00.000Z"
     },
     { "id": 7, 
     	"title": "Morbi at nulla mattis nunc fringilla finibus", 
-    	"author": "typicode",
+    	"author": "Bill Blue Jacket",
     	"category": "POLITICS",
     	"type": "story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -96,11 +96,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-06-20T03:00:00.000Z"
     },
     { "id": 8, 
     	"title": "Morbi at nulla mattis nunc fringilla finibus", 
-    	"author": "typicode",
+    	"author": "Sally GoLoudly",
     	"category": "POLITICS",
     	"type": "story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -110,11 +110,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-05-20T03:00:00.000Z"
     },
     { "id": 9, 
     	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
-    	"author": "typicode",
+    	"author": "Bruce Thinlip",
     	"category": "NATIONAL",
     	"type": "story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -124,11 +124,11 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-04-20T03:00:00.000Z"
     },
     { "id": 10, 
     	"title": "Vestibulum a magna porta, pulvinar felis non, pretium lacus", 
-    	"author": "typicode",
+    	"author": "Richard Mumms",
     	"category": "MEDIA",
     	"type": "story",
     	"textShort": "In nec auctor elit. Integer tristique dolor eu ornare auctor.",
@@ -138,7 +138,7 @@
     		"credit": "John Do",
     		"caption": ""
     	},
-    	"date": ""
+        "createdOnDate": "2012-03-20T03:00:00.000Z"
     }
   ]
 }

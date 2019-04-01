@@ -24,3 +24,72 @@
 	font-size: 0.85em;
 }
 
+.bylineContainer {
+	display: flex;
+	flex-flow: row wrap;
+	border: 1px solid #cccccc;
+	height: 30px;
+	width: 300px;
+	margin: 20px 0;
+}
+
+.reporterHeadshot {
+	width: 30px;
+	height: 30px;
+	background-color: #3b5998;
+	color: #ffffff;
+	padding: 2px 0 0 7px;
+}
+
+.reporterName {
+	padding: 2px 16px 0 12px;
+	color: #8b9dc3;
+}
+
+.socialIconsContainer {
+	display: flex;
+	padding: 2px 8px 0;
+	width: 90px;
+	justify-content: space-between;
+}
+
+.socialIcon {
+	color: #8b9dc3;
+}
+
+.shareSocialIconsContainer {
+	margin: 50px 0;
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+}
+
+.shareSocialIcon {
+	color: #cccccc;
+}
+
+.signupContainer {
+	background-color: #e5e5e5;
+	padding: 20px;
+	text-align: center;
+}
+
+.inputNewsletter {
+	width: 100%;
+	height: 35px;
+	border: 1px solid #cccccc;
+	text-align: center;
+	font-size: 0.9em;
+	color: #cccccc;	
+}
+
+.btnSignup {
+	width: 100%;
+	height: 35px;
+	background-color: #77c8c0;
+	color: #666666;
+	margin-top: 8px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border: none;
+}

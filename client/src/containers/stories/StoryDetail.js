@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchStories, fetchImages } from './StoryActions';
 import globalStyles from '../App.css';
 import storyStyles from './Stories.css';
+import { getPrettyDateTime } from '../../utils/helpers';
 
 let styles = {};
 Object.assign(styles, globalStyles, storyStyles);
@@ -22,6 +23,8 @@ class StoryDetail extends Component {
 		let curStory;
 		let curVideo;
 		let videoSrc;
+		let prettyDate;
+
 		if (this.props && this.props.match) {
 			storyId = this.props.match.params.id;
 		}
@@ -33,7 +36,8 @@ class StoryDetail extends Component {
 			curStory = curStory[0]
 			console.log('curStory', curStory)
 			videoSrc = `https://www.youtube.com/embed/${curStory.video.id.videoId}?autoplay=1`;
-			console.log('videoSrc', videoSrc)
+			prettyDate = getPrettyDateTime(curStory.createdOnDate);
+			console.log('prettyDate', prettyDate);
 		}
 
 /* placeholder
@@ -45,7 +49,10 @@ class StoryDetail extends Component {
 					<p className={styles.imageCredit}>{curStory[0].author}</p>
 				</div>
 
-"https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+					<div>show name</div>
+									<div>transcript</div>
+
+
 */
 
 		return (
@@ -55,18 +62,19 @@ class StoryDetail extends Component {
 					<p className={styles.titleDetail}>{curStory.title}</p>
 				</div>
 				<div className={styles.storyMetaContainer}>
-					<div>date time</div>
-					<div>show name</div>
-					<div>reporter container
-						<div>reporter headshot</div>
-						<div>reporter byline</div>
-						<div>reporter social icons container
-							<div>facebook link</div>
-							<div>twitter link</div>
-							<div>instagram link</div>
+					<div className={styles.storyMetaText}>{prettyDate}</div>
+					<div className={styles.bylineContainer}>
+						<div className={styles.reporterHeadshot}>TD</div>
+						<div className={styles.reporterName}>{curStory.author}</div>
+						<div className={styles.socialIconsContainer}>
+							<div className={styles.socialIcon}><i class="fab fa-facebook-square"></i></div>
+							<div className={styles.socialIcon}><i class="fab fa-twitter"></i></div>
+							<div className={styles.socialIcon}><i class="fab fa-instagram"></i></div>
 						</div>
 					</div>
 				</div>
+
+
 
 				<div className={styles.ytContainer}>
 					<iframe id="ytplayer" type="text/html" className={styles.respIframe}
@@ -74,13 +82,18 @@ class StoryDetail extends Component {
 					  frameBorder="0"></iframe>
 				</div>
 
-				<div>transcript</div>
-				<div>story social sharing icons container</div>
-				<div>
-					<div>newsletter signup box heading</div>
-					<div>newsletter signup text</div>
-					<div>email input</div>
-					<button>SUBSCRIBE</button>
+				<div className={styles.shareSocialIconsContainer}>
+					<div className={styles.shareSocialIcon}><i class="fab fa-facebook-square fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i class="fab fa-twitter fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i class="fab fa-flipboard fa-2x"></i></div>
+					<div className={styles.shareSocialIcon}><i class="fas fa-envelope fa-2x"></i></div>
+				</div>
+
+				<div className={styles.signupContainer}>
+					<div className={styles.signupHeading}><h2>Sign Up For The Pandas Newsletter</h2></div>
+					<div className={styles.signupText}><p>Get the latest news, videos, reviews and more, sent weekly.</p></div>
+					<div><input type="email" className={styles.inputNewsletter} placeholder="What's your email?" /></div>
+					<button className={styles.btnSignup}>SUBSCRIBE</button>
 				</div>
 			</div>
 		)

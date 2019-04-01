@@ -11,7 +11,6 @@ nav {
 }
 
 main {
-	/*margin: 16px 0;*/
 	padding: 10px;
 	background-color: #f4f4f4;
 }
@@ -28,23 +27,15 @@ footer {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	margin-bottom: 10px;
-	/*margin: 0 16px 16px 16px;*/
-	/*border: 1px solid #cccccc;*/
 	box-shadow: 2px 2px 2px 2px #e5e5e5;
 	padding: 10px;
-	/*height: 180px;*/
 }
-
-/*.story:after {
-	clear: both;
-}*/
 
 .secondaryStory {
 	height: 150px;
 }
 
 .textContent {
-	/*float: left;*/
 	width: 60%;
 }
 
@@ -52,7 +43,6 @@ footer {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 0.9em;
 	color: #7a7a7a;
-	/*#4c4c4c;*/
 }
 
 .title {
@@ -62,8 +52,7 @@ footer {
 }
 
 .storyImage {
-	/*float: right;*/
-	width: 40%; /*- 32px/2 - 32px/2*/
+	width: 40%;
 	display: flex;
 	flex-flow: column wrap;
 }
@@ -88,7 +77,6 @@ img {
 
 .btnMedium {
 	background-color: #77c8c0;
-	/*#beffa4;*/
 	width: 130px;
 	height: 30px;
 	padding: 6px;
@@ -176,7 +164,6 @@ img {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
-		/*justify-content: space-between;*/
 	}
 
 	.storiesContainer {
@@ -184,17 +171,16 @@ img {
 	}
 
 	.adContainer {
-		display: flex; /*block;*/
+		display: flex;
 		position: fixed;
 		right: 16px;
 		width: calc(33%);
 		height: 300px;
-		background-color: #beffa4; /*#e5e5e5;*/
+		background-color: #beffa4;
 		border: 1px solid #14e3b4;
 		flex-flow: column wrap;
 		justify-content: center;
 		align-items: center;
-		/*align-self: flex-start;*/
 	}
 
 	.adContent {
@@ -205,5 +191,4 @@ img {
 	.title {
 		font-size: 1.8em;
 	}
-
 }

@@ -64,8 +64,35 @@ main {
 }
 
 footer {
-	height: 350px;
-	background-color: #cccccc;
+	min-height: 350px;
+	/*background-color: #cccccc;*/
+	padding: 30px 18px;
+}
+
+.footerLinksContainer {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.footerLinksSection {
+	width: 50%;
+	padding: 12px 0;
+}
+
+.footerLink {
+	padding: 5px 0;
+	color: #3b6460;
+}
+
+.footerTermsContainer {
+	border-top: 1px solid #cccccc;
+	color: #666666;
+	padding-top: 18px;
+}
+
+.footerTermsLinkItem,
+.footerTermsItem {
+	padding-top: 8px;
 }
 
 .hide {
@@ -93,10 +120,15 @@ footer {
 	width: 60%;
 }
 
-.category {
+.category,
+.footerLinkHeading {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 0.9em;
 	color: #7a7a7a;
+}
+
+.footerLinkHeading {
+	padding: 5px 0;
 }
 
 .title {
@@ -210,6 +242,10 @@ img {
 	.secondaryStory .storyImage {
 		width: 100%;
 		order: 1;
+	}
+
+	.footerLinksSection {
+		width: 25%;
 	}
 
 }

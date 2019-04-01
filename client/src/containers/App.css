@@ -79,7 +79,7 @@ img {
 	background-color: #77c8c0;
 	width: 130px;
 	height: 30px;
-	padding: 6px;
+	padding: 3px 6px 6px 6px;
 	border-radius: 16px;
 	text-align: center;
 	margin-top: 16px;
@@ -94,7 +94,7 @@ img {
 	background-color: #ffffff;
 	width: 100px;
 	height: 30px;
-	padding: 4px;
+	padding: 1px 4px 4px 4px;
 	border: 1px solid #cccccc;
 	border-radius: 16px;
 	text-align: center;
@@ -106,7 +106,7 @@ img {
 	background-color: #ffffff;
 	width: 30px;
 	height: 30px;
-	padding: 4px;
+	padding: 1px 4px 4px 4px;
 	border: 1px solid #cccccc;
 	border-radius: 16px;
 	text-align: center;

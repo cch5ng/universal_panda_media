@@ -34,7 +34,6 @@ class Stories extends Component {
 						<PrimaryStory story={primaryStory} />
 					)}
 
-
 					{secondaryStoriesAr.length > 0 && (
 						<div className={styles.secondaryStoriesContainer}>
 							{secondaryStoriesAr.map((secondaryStory, idx) => 
@@ -63,14 +62,6 @@ function mapStateToProps(state) {
 	}
 }
 
-//	<img src={props.story.image.urls.regular} alt={props.story.image.description} />
-/*
-	"elva-fairy-320w.jpg,
-    elva-fairy-480w.jpg 1.5x,
-    elva-fairy-640w.jpg 2x"
-		<p className={styles.imageCredit}>{props.story.image.user.name}</p>
-*/
-
 function PrimaryStory(props) {
 	let srcSet = `${props.story.video.snippet.thumbnails.high.url}, ${props.story.video.snippet.thumbnails.medium.url} 1.5x, ${props.story.video.snippet.thumbnails.high.url} 2x`;
 	let link = `/story/${props.story.id}`;
@@ -79,8 +70,12 @@ function PrimaryStory(props) {
 		<div className={styles.story} idx="0">
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
-				<p className={styles.title}>{props.story.title}</p>
-				<p>{props.story.textShort}</p>
+				<NavLink className={styles.titleLink} to={link}>
+					<p className={styles.title}>{props.story.title}</p>
+				</NavLink>
+				<NavLink className={styles.textShortLink} to={link}>
+					<p>{props.story.textShort}</p>
+				</NavLink>
 			</div>
 			<div className={styles.storyImage}>
 				<NavLink to={link}>
@@ -104,7 +99,9 @@ function SecondaryStory(props) {
 		<div className={secondStoryContainerClass}>
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
-				<p className={styles.title}>{props.story.title}</p>
+				<NavLink className={styles.titleLink} to={link}>
+					<p className={styles.title}>{props.story.title}</p>
+				</NavLink>
 			</div>
 			<div className={styles.storyImage}>
 				<NavLink to={link}>
@@ -124,8 +121,12 @@ function Story(props) {
 		<div className={styles.story}>
 			<div className={styles.textContent}>
 				<p className={styles.category}>{props.story.category}</p>
-				<p className={styles.title}>{props.story.title}</p>
-				<p>{props.story.textShort}</p>
+				<NavLink className={styles.titleLink} to={link}>
+					<p className={styles.title}>{props.story.title}</p>
+				</NavLink>
+				<NavLink className={styles.textShortLink} to={link}>
+					<p>{props.story.textShort}</p>
+				</NavLink>
 				<div className={styles.btnContainer}>
 					<div className={styles.btnMedium}><span className={styles.btnMediumIcon}>&#9654;</span> Play</div>
 					<div className={styles.btnSmall}><span className={styles.btnSmallIcon}>&#43;</span> Queue</div>

@@ -23,7 +23,7 @@ nav {
 	color: #ffffff;
 	width: 65px;
 	height: 30px;
-	padding: 2px 0 0 13px;
+	padding: 0 0 0 15px;
 }
 
 button.navButton {
@@ -135,6 +135,35 @@ footer {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 1.4em;
 	font-weight: bold;
+}
+
+.logoLink:link,
+.logoLink:visited,
+.logoLink:hover,
+.logoLink:active {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.titleLink:link,
+.titleLink:visited {
+	text-decoration: none;
+	color: #4c4c4c;
+}
+
+.titleLink:hover,
+.titleLink:active {
+	text-decoration: none;
+	color: #5fa099
+	/*#6bb4ac;*/
+}
+
+.textShortLink:link,
+.textShortLink:visited,
+.textShortLink:hover,
+.textShortLink:active {
+	text-decoration: none;
+	color: #4c4c4c;
 }
 
 .storyImage {

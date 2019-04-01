@@ -1,8 +1,21 @@
-# cc_media
+# Universal Panda Media
 
 * This is a copycat project for a multi-media news site
 
-* Purpose: work with streaming media, more complex CSS, build react component library
+* Purpose: work with streaming media, more complex CSS
+
+* Working features
+
+   * Navigation menu button
+
+   * Links to video content (story detail view)
+
+* It is not fully functional. Examples:
+
+   * Navigation links (header navigation menu and footer navigation menu)
+
+   * Controller buttons (Play, Queue, Transcript)
+
 
 ## Setup
 
@@ -10,17 +23,14 @@
 
 * Libraries need to be installed at a few levels (root, server, client)
 
+* Packages were installed using Node v10.15.3 and npm v6.4.1
+
 ```
-yarn install
 cd server
 yarn install
 cd ../client
 yarn install
 ```
-
-**Get an unsplash account key**
-
-* https://unsplash.com/documentation#creating-a-developer-account
 
 **Set up environment variables**
 
@@ -30,8 +40,6 @@ yarn install
 For development:
 
 `JSON_SERVER_API_ROOT='http://localhost:3000/'`
-
-Append your unsplash application key to the end of the 2nd variable, UNSPLASH_CLIENT_KEY. Leave a space between the 2 strings in UNSPLASH_CLIENT_KEY.
 
 ## Run
 
@@ -57,6 +65,11 @@ yarn run start
 
 * The application is available from http://localhost:8080
 
+## Background
+
+
+
 ## Credits
 
-* Images are sourced from unsplash.com
+* Videos were captured and edited by doxiemom19 on youtube
+

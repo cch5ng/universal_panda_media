@@ -18,12 +18,14 @@ nav {
 
 .logo {
 	font-family: 'Laila', serif;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	background-color: #cc0050;
 	color: #ffffff;
 	width: 65px;
 	height: 30px;
-	padding: 0 0 0 15px;
+	padding: 0 0 0 11px;
+	letter-spacing: .2rem;
+	font-weight: bold;
 }
 
 button.navButton {
@@ -255,7 +257,7 @@ img {
 	}
 
 	.secondaryStory {
-		width: 28%;
+		width: 32%;
 		height: 400px;
 		display: flex;
 		flex-flow: column wrap;
@@ -290,6 +292,10 @@ img {
 		width: 66%;
 	}
 
+	.secondStoryContainerClass {
+		flex-flow: column wrap;
+	}
+
 	.adContainer {
 		display: flex;
 		position: fixed;
@@ -310,5 +316,9 @@ img {
 
 	.title {
 		font-size: 1.8em;
+	}
+
+	footer {
+		width: 66%;
 	}
 }

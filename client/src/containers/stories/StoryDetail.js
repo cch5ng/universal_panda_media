@@ -38,6 +38,7 @@ class StoryDetail extends Component {
 			videoSrc = `https://www.youtube.com/embed/${curStory.video.id.videoId}?autoplay=1`;
 			prettyDate = getPrettyDateTime(curStory.createdOnDate);
 			console.log('prettyDate', prettyDate);
+			console.log('videoSrc', videoSrc)
 		}
 
 /* placeholder
@@ -48,11 +49,6 @@ class StoryDetail extends Component {
 					<img src={curStory[0].video.snippet.thumbnails.high.url} alt={curStory[0].image.description} />
 					<p className={styles.imageCredit}>{curStory[0].author}</p>
 				</div>
-
-					<div>show name</div>
-									<div>transcript</div>
-
-
 */
 
 		return (
@@ -73,8 +69,6 @@ class StoryDetail extends Component {
 						</div>
 					</div>
 				</div>
-
-
 
 				<div className={styles.ytContainer}>
 					<iframe id="ytplayer" type="text/html" className={styles.respIframe}

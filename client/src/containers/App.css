@@ -29,6 +29,8 @@ footer {
 	margin-bottom: 10px;
 	box-shadow: 2px 2px 2px 2px #e5e5e5;
 	padding: 10px;
+	box-shadow: 2px 2px 2px 2px #e5e5e5;
+	padding: 10px;
 }
 
 .secondaryStory {
@@ -52,6 +54,7 @@ footer {
 }
 
 .storyImage {
+	width: 40%;
 	width: 40%;
 	display: flex;
 	flex-flow: column wrap;
